@@ -1,0 +1,36 @@
+<a href="#" id="new-button">New</a>
+<table>
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Middle Name</th>
+      <th>Last Name</th>
+      <th>Date Of Birth</th>
+      <th>Gender</th>
+      <th>Email</th>
+      <th>Address</th>
+      <th>Phone Number</th>
+      <th>City</th>
+      <th>State</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let joggingInfo of joggingData">
+      <td>{{ joggingInfo.first_Name}}</td>
+      <td>{{ joggingInfo.middle_Name}}</td>
+      <td>{{ joggingInfo.last_Name}}</td>
+      <td>{{ joggingInfo.date_Of_Birth}}</td>
+      <td>{{ joggingInfo.gender}}</td>
+      <td>{{ joggingInfo.email}}</td>
+      <td>{{ joggingInfo.address}}</td>
+      <td>{{ joggingInfo.phone_Number}}</td>
+      <td>{{ joggingInfo.city}}</td>
+      <td>{{ joggingInfo.state}}</td>
+
+      <td>
+        <a href="#" (click)="editRecord(this)">Edit</a>
+        <a href="#" (click)="deleteRecord(this)">Delete</a>
+      </td>
+    </tr>
+  </tbody>
+</table>

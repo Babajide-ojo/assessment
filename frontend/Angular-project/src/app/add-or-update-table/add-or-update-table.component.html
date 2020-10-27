@@ -1,0 +1,29 @@
+
+<div>
+  <h2></h2>
+  <form>
+    <div class="form-group">
+      <label for="name">First Name</label>
+      <input type="text" [(ngModel)]="joggingInfo.firstName" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="name">First Name</label>
+      <input type="text" [(ngModel)]="joggingInfo.middleName" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="name">Last Name</label>
+      <input type="text" [(ngModel)]="joggingInfo.lastName" class="form-control" />
+    </div>
+    < <div class="form-group">
+      <label for="name">Gender</label>
+      <input type="text" [(ngModel)]="joggingInfo.gender" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="name">Address</label>
+      <input type="text" [(ngModel)]="joggingInfo.address" class="form-control" />
+    </div>
+    
+    <button type="button" class="btn btn-primary" (click)="addOrUpdateJoggingRecord($event);">Save</button>
+
+  </form>
+</div>
